@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
-import Dashboard from './pages/Dashboard';
-import Profile from './pages/Profile';
+// import Dashboard from './pages/Dashboard';
+// import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -20,15 +20,15 @@ function App() {
           </nav>
         </header>
 
-        <Switch>
+        <Routes>
           <Route path="/profile">
-            <Profile />
+            {/* <Profile /> */}
           </Route>
           <Route path="/">
-            <Dashboard />
+            {/* <Dashboard /> */}
           </Route>
           {/* Add more routes as needed */}
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );
