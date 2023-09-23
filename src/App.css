@@ -21,10 +21,13 @@ body {
 
 /* Style the header with a background color and text color */
 .App-header {
-  background-color: #007BFF; /* Use your preferred color */
+  background-color: #015d27; /* Use your preferred color */
   width: 100%;
   padding: 20px 0;
   text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Style the app title */
@@ -55,5 +58,9 @@ nav a {
 
 nav a:hover {
   color: #61dafb; /* Highlight color on hover */
+}
+
+p {
+  text-align: center;
 }
 

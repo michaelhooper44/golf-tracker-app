@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
-// import Dashboard from './pages/Dashboard';
-// import Profile from './pages/Profile';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 
 function App() {
   return (
@@ -21,12 +21,8 @@ function App() {
         </header>
 
         <Routes>
-          <Route path="/profile">
-            {/* <Profile /> */}
-          </Route>
-          <Route path="/">
-            {/* <Dashboard /> */}
-          </Route>
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/" element={<Dashboard />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>
