@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './Profile.module.css';
 
 function Profile() {
   // Define state for user information
@@ -7,11 +8,11 @@ function Profile() {
     name: 'John Doe',
     email: 'johndoe@example.com',
     handicap: 12.5,
-    // Add more user fields as needed
+    
   });
 
   return (
-    <div>
+    <div className={styles['profile']}>
       <h2>User Profile</h2>
       <div>
         <strong>Username:</strong> {userInfo.username}

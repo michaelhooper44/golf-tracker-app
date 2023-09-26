@@ -5,12 +5,13 @@ import './App.css';
 import Dashboard from './pages/Dashboard';
 import Profile from './pages/Profile';
 
+
 function App() {
   return (
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Golf Score Tracker</h1>
+          <h1>Athens GolfTracker</h1>
           <nav>
             <ul>
               <li><Link to="/">Dashboard</Link></li>
@@ -18,6 +19,7 @@ function App() {
               {/* Add more navigation links here */}
             </ul>
           </nav>
+          <hr></hr>
         </header>
 
         <Routes>
